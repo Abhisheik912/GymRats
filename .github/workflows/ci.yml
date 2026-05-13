@@ -23,3 +23,6 @@ jobs:
 
       - name: Step 4 - Show Node version
         run: node --version
+
+        - name: Step 5 - Show greeting
+          run: echo "My name is YOUR_NAME and GymRats is live!"
