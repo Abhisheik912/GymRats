@@ -26,3 +26,11 @@ jobs:
       - name: Step 4 - Build frontend
         run: npm run build
         working-directory: frontend
+
+      - name: Step 5 - Install backend dependencies
+        run: npm install
+        working-directory: backend
+
+      - name: Step 6 - Build backend
+        run: npm run build
+        working-directory: backend 
