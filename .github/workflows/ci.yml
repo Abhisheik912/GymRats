@@ -26,3 +26,6 @@ jobs:
 
       - name: Step 5 - Show greeting
         run: echo "My name is YOUR_NAME and GymRats is live!"
+
+      - name: Step 6 - Running npm build
+        run: npm run build
