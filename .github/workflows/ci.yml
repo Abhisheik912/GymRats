@@ -29,3 +29,6 @@ jobs:
 
       - name: Step 6 - Running npm build
         run: npm run build
+
+      - name: Step 7 - Show current branch
+        run: echo "Running on branch: $GITHUB_REF"
