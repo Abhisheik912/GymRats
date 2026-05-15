@@ -19,17 +19,10 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Step 3 - Confirm it worked
-        run: echo "✅ GymRats pipeline is working!"
+      - name: Step 3 - Install frontend dependencies
+        run: npm install
+        working-directory: frontend
 
-      - name: Step 4 - Show Node version
-        run: node --version
-
-      - name: Step 5 - Show greeting
-        run: echo "My name is YOUR_NAME and GymRats is live!"
-
-      - name: Step 6 - Running npm build
+      - name: Step 4 - Build frontend
         run: npm run build
-
-      - name: Step 7 - Show current branch
-        run: echo "Current branch $GITHUB_REF"
+        working-directory: frontend
