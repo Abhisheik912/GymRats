@@ -32,4 +32,4 @@ jobs:
         run: npm run build
 
       - name: Step 7 - Show current branch
-        run: echo "Running on branch: $GITHUB_REF"
+        run: echo "Current branch: ${{ github.ref }}"
