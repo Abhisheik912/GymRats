@@ -32,5 +32,7 @@ jobs:
         working-directory: backend
 
       - name: Step 6 - Build backend
-        run: ./node_modules/.bin/nest build
+        run: |
+          chmod +x node_modules/.bin/nest
+          npm run build
         working-directory: backend
