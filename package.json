@@ -1,7 +1,0 @@
-{
-  "name": "gymrats",
-  "version": "1.0.0",
-"scripts": {
-    "build": "echo Building GymRats app..."
-  }
-}
