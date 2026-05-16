@@ -1,3 +1,4 @@
+#Pipeline updated to build and push Docker images for both frontend and backend to Docker Hub. It includes steps
 name: GymRats CI Pipeline
 
 on:
