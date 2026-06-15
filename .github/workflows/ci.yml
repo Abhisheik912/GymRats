@@ -35,9 +35,9 @@ jobs:
       - name: Step 5.5 - Generate Prisma Client
         run: npx prisma generate
         working-directory: backend
-        
+
       - name: Step 6 - Build backend
-        run: 
+        run: |
           chmod +x node_modules/.bin/nest
           npm run build
         working-directory: backend
