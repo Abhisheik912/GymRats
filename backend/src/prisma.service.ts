@@ -1,5 +1,5 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
-import { PrismaClient } from '../generated/prisma';
+import { PrismaClient } from '@prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
 import { Pool } from 'pg';
 
@@ -11,7 +11,7 @@ export class PrismaService extends PrismaClient implements OnModuleInit {
       ssl: { rejectUnauthorized: false },
     });
     const adapter = new PrismaPg(pool);
-    super({ adapter });
+    super({ adapter } as any);
   }
 
   async onModuleInit() {
