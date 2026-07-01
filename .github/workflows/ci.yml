@@ -60,4 +60,6 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/gymrats-backend:latest
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/gymrats-backend:latest
+            ${{ secrets.DOCKER_USERNAME }}/gymrats-backend:${{ github.sha }}
