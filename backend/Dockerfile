@@ -4,5 +4,5 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 RUN npx prisma generate
-RUN npm run build
+RUN ./node_modules/.bin/nest build
 CMD ["node", "dist/main.js"]
